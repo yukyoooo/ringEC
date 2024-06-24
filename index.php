@@ -58,10 +58,10 @@
 			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_3.jpg">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_4.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_4.JPG">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_5.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_5.JPG">
 		</div>
 	</div>
 </div>
