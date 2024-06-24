@@ -1,0 +1,15 @@
+.footer-art-board {
+	height: 200px;
+}
+.footer-art-board img{
+	height: 100%;
+	display: block;
+	margin:auto;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.footer-art-board {
+		height: 130px;
+	}
+}
