@@ -1,11 +1,11 @@
+@import url(header.css);
 @import url(footer.css);
 /*  */
 /*  topページ*/
 /*  */
-.body{
-	margin:0 !important;
-}
+
 .top-wrapper{
+	margin-top:60px;
 	height: 1000px;
 	background-image: url('/wp-content/themes/ringEC/assets/images/00_top.JPG');
 	background-size: cover;

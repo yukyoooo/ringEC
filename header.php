@@ -11,5 +11,13 @@
 	} ); ?>
 	<?php wp_head(); ?>
 </head>
-
 <body>
+	<header class="header-bar">
+		<nav class="pc-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>
+			</ul>
+		</nav>
+	</header>
