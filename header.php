@@ -15,7 +15,7 @@
 	<header class="header-bar">
 		<nav class="pc-nav">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">News</a></li>
 			</ul>
