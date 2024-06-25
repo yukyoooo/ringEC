@@ -21,21 +21,21 @@
 </div>
 <div class="top-pics">
 	<div class="top-pics-left">
-		<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_left.jpg">
+		<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_left.jpg">
 	</div>
 	<div class="top-pics-right">
 		<div class="top-pics-right-top">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_right_1.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_1.jpg">
 		</div>
 		<div class="top-pics-right-bottom">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_right_2.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_2.jpg">
 		</div>
 	</div>
 </div>
 <div class="top-pics2">
 	<div class="top-pics2-top">
 		<div class="top-pics2-left">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_left.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_left.jpg">
 		</div>
 		<div class="top-pics2-right">
 			<div class="product-name">
@@ -49,19 +49,19 @@
 	</div>
 	<div class="top-pics2-bottom">
 		<div class="top-pics2-bottom-1">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_bottom_1.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_1.jpg">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_bottom_2.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_2.jpg">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_bottom_3.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_3.jpg">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_bottom_4.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_4.jpg">
 		</div>
 		<div class="top-pics2-bottom-2">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/original/00_top_pics2_bottom_5.jpg">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_pics2_bottom_5.jpg">
 		</div>
 	</div>
 </div>
