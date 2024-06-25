@@ -141,7 +141,7 @@
 
 .top-toOnlineShop2{
 	height: 2200px;
-	background-image: url('/wp-content/themes/ringEC/assets/images/original/00_top_shop.JPG');
+	background-image: url('/wp-content/themes/ringEC/assets/images/00_top_shop.JPG');
 	background-color:rgba(220,220,220,0.5);
 	background-blend-mode:lighten;
 	background-size: cover;
@@ -301,6 +301,7 @@
 		font-size: 8px;
 	}
 	.top-wrapper{
+		margin-top:30px;
 		height: 280px;
 	}
 	.top-text p{
