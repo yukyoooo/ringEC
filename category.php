@@ -12,13 +12,6 @@ get_header();
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
 		<?php
 		if ( usces_is_cat_of_item( get_query_var( 'cat' ) ) ) :
 			if ( have_posts() ) :
@@ -35,7 +28,6 @@ get_header();
 								<?php usces_the_itemImage( 0, 300, 300 ); ?>
 								<?php do_action( 'usces_theme_favorite_icon' ); ?>
 							</a>
-							<?php welcart_basic_campaign_message(); ?>
 						</div>
 						<div class="itemprice">
 							<?php usces_the_firstPriceCr(); ?><?php usces_guid_tax(); ?>
