@@ -14,7 +14,7 @@
 </div>
 <div class="top-toOnlineShop">
 	<div class="top-toOnlineShop-button">
-		<a href="#" class="top-toOnlineShop-button-a">
+		<a href="<?php bloginfo('url'); ?>/category/item/" class="top-toOnlineShop-button-a">
 			オンラインショップを見る
 		</a>
 	</div>
@@ -76,7 +76,7 @@
 		<p>Signet Ring</p>
 	</div>
 	<div class="to-shop-button">
-		<a href="#" class="top-toOnlineShop2-button-a">
+		<a href="<?php bloginfo('url'); ?>/category/item/" class="top-toOnlineShop2-button-a">
 			オンラインショップを見る
 		</a>
 	</div>

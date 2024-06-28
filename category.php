@@ -10,8 +10,10 @@ get_header();
 ?>
 
 	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
+		<div id="content" role="main" class="products-wrapper">
+			<div class="products-title">
+				<p class="product-title-text">商品ラインナップ</p>
+			</div>
 		<?php
 		if ( usces_is_cat_of_item( get_query_var( 'cat' ) ) ) :
 			if ( have_posts() ) :
@@ -22,49 +24,25 @@ get_header();
 				while ( have_posts() ) :
 					the_post();
 					?>
+					<?php if ( usces_have_zaiko_anyone() ) : ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<div class="itemimg">
-							<a href="<?php the_permalink(); ?>">
-								<?php usces_the_itemImage( 0, 300, 300 ); ?>
-								<?php do_action( 'usces_theme_favorite_icon' ); ?>
-							</a>
-						</div>
-						<div class="itemprice">
-							<?php usces_the_firstPriceCr(); ?><?php usces_guid_tax(); ?>
-						</div>
-						<?php usces_crform_the_itemPriceCr_taxincluded(); ?>
-					<?php if ( ! usces_have_zaiko_anyone() ) : ?>
-						<div class="itemsoldout">
-							<?php welcart_basic_soldout_label( get_the_ID() ); ?>
-						</div>
-					<?php endif; ?>
-						<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+						<a href="<?php the_permalink(); ?>">
+							<div class="itemimg">
+									<?php usces_the_itemImage( 0, 300, 300 ); ?>
+									<?php do_action( 'usces_theme_favorite_icon' ); ?>
+							</div>
+							<div class="itemname">
+								<p><?php usces_the_itemName(); ?></p>
+							</div>
+							<div class="itemprice">
+								<p><?php usces_the_firstPriceCr(); ?></p>
+<!--								--><?php //usces_guid_tax(); ?>
+							</div>
+						</a>
 					</article>
+					<?php endif; ?>
 				<?php endwhile; ?>
 				</div><!-- .cat-il -->
-
-				<?php
-			endif;
-		else :
-			if ( have_posts() ) :
-				?>
-
-				<div class="post-li">
-				<?php
-				while ( have_posts() ) :
-					the_post();
-					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<p><time datetime="<?php the_time( 'c' ); ?>"><?php the_time( __( 'Y/m/d' ) ); ?></time></p>
-						<div class="post-title">
-							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf( esc_attr__( 'Permalink to %s', 'welcart_basic' ), the_title_attribute( 'echo=0' ) ); ?>">
-								<?php the_title(); ?>
-							</a>
-						</div>
-						<?php the_excerpt(); ?>
-					</article>
-				<?php endwhile; ?>
-				</div><!-- .post-li -->
 
 				<?php
 			endif;
