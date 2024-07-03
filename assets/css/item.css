@@ -1,0 +1,216 @@
+.product-detail-wrapper{
+	font-family: Apple Chancery, Chancery;
+	margin-top:100px;
+	margin-bottom:150px;
+}
+
+.back-btn{
+	background-color: #EDEDED;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	text-decoration:none;
+	color:#020202;
+	font-family: Hiragino Kaku Gothic ProN;
+	padding: 20px 10px;
+}
+.item-page{
+	display: flex;
+}
+.img-box{
+	margin-left: 100px;
+	width: 550px;
+}
+.img-box img{
+	width: 500px;
+	height: 500px;
+}
+.imgs-box{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: 10px;
+}
+.itemimg{
+	width: 240px;
+	margin:0px 10px 10px 10px;
+}
+.itemimg img{
+	width: 240px;
+	height: 240px;
+}
+
+.item_main_wrapper{
+	margin-top:150px;
+	display: flex;
+	justify-content:space-around;
+}
+.price_wrapper{
+	text-align: center;
+	font-size: 30px;
+	padding-top:50px;
+}
+.price_wrapper h2{
+	margin:0;
+}
+.item-price{
+	color:#030303;
+}
+.item-price p{
+	margin:0;
+}
+.item-info{
+	margin-top:100px;
+}
+.detail-box{
+	font-size: 10px;
+	font-family: Academy Engraved LET, Plain;
+}
+.skuquantity{
+	width: 100px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 2px solid #ddd;
+	box-sizing: border-box;
+}
+.c-box span{
+	font-size: 12px;
+}
+.skubutton{
+	color: #fff;
+	background-color: #4D4D4D;
+	opacity: 0.6;
+	border: none;
+	padding: 5px 20px;
+	margin: 10px 0 0 0;
+	border-radius: 3px;
+}
+.skubutton:hover{
+	color: #fff;
+	background: #4D4D4D;
+	opacity: 1;
+
+}
+
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.item-page{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.img-box{
+		width: 80%;
+		margin:0 auto;
+	}
+	.img-box img{
+		width: 100%;
+		height: 100%;
+	}
+	.imgs-box{
+		width: 83%;
+		padding-left: 1%;
+		margin:0 auto;
+		margin-top:1%;
+	}
+	.itemimg{
+		width: 30%;
+		height: 30%;
+		margin:0.5% 1.5%;
+	}
+	.itemimg img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.price_wrapper{
+		text-align: left;
+		font-size: 20px;
+		padding-left: 10%;
+	}
+	.price_wrapper h2{
+		margin:0;
+	}
+	.item-price{
+		color:#030303;
+	}
+	.item-info{
+		margin-top:100px;
+	}
+	.detail-box{
+		font-size: 6px;
+		margin-top:30px;
+		padding-right:10%;
+	}
+	.detail-box p {
+		font-size: 6px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.category-item{
+		width: 100%;
+	}
+	.product-detail-wrapper{
+		margin-top:60px;
+	}
+	.item-page{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.img-box{
+		width: 88%;
+		margin:0 auto;
+	}
+	.img-box img{
+		width: 100%;
+		height: 100%;
+	}
+	.imgs-box{
+		width: 92.5%;
+		padding-left: 1%;
+		margin:0 auto;
+		margin-top:1%;
+	}
+	.itemimg{
+		width: 29%;
+		height: 29%;
+		margin:1% 2%;
+	}
+	.itemimg img{
+		width: 100%;
+		height: 100%;
+	}
+	.item_main_wrapper{
+		margin-top:30px;
+	}
+	.price_wrapper{
+		font-size: 15px;
+		padding-left: 6%;
+	}
+	.price_wrapper h2{
+		font-weight: normal;
+	}
+	.item-info{
+		margin-top:100px;
+	}
+	.detail-box{
+		font-size: 4px;
+		margin-top:40px;
+		padding-right:10%;
+	}
+	.detail-box ul{
+		padding-left:5px;
+	}
+	.detail-box p {
+		font-size: 4px;
+	}
+}
