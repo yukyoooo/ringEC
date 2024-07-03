@@ -42,7 +42,7 @@ get_header();
 								?>
 								<div class="imgs-box">
 									<?php foreach ( $image_ids as $image_id ) : ?>
-									<div class="itemimg">
+									<div class="detail-itemimg">
 										<a href="<?php usces_the_itemImageURL( $image_id ); ?>" <?php echo apply_filters( 'usces_itemimg_anchor_rel', null ); ?>>
 											<?php usces_the_itemImage( $image_id, 135, 135, $post ); ?>
 										</a>

@@ -31,11 +31,11 @@
 	flex-direction: row;
 	margin-left: 10px;
 }
-.itemimg{
+.detail-itemimg{
 	width: 240px;
 	margin:0px 10px 10px 10px;
 }
-.itemimg img{
+.detail-itemimg img{
 	width: 240px;
 	height: 240px;
 }
@@ -118,12 +118,12 @@
 		margin:0 auto;
 		margin-top:1%;
 	}
-	.itemimg{
+	.detail-itemimg{
 		width: 30%;
 		height: 30%;
 		margin:0.5% 1.5%;
 	}
-	.itemimg img{
+	.detail-itemimg img{
 		width: 100%;
 		height: 100%;
 	}
@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
-	.category-item{
+	.product-detail-wrapper article{
 		width: 100%;
 	}
 	.product-detail-wrapper{
@@ -180,12 +180,12 @@
 		margin:0 auto;
 		margin-top:1%;
 	}
-	.itemimg{
+	.detail-itemimg{
 		width: 29%;
 		height: 29%;
 		margin:1% 2%;
 	}
-	.itemimg img{
+	.detail-itemimg img{
 		width: 100%;
 		height: 100%;
 	}
