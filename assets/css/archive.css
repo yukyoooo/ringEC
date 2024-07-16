@@ -1,5 +1,6 @@
 a {
 	text-decoration:none;
+	color:#4D4D4D;
 }
 .conetnts {
 	background-color: #EDEDED;
@@ -60,7 +61,7 @@ li{
 	.contents-wrapper {
 		width:85%;
 		padding: 0 0px 50px 0px;
-		min-height: 700px;
+		min-height: 750px;
 	}
 	.contents-header h2{
 		font-family: Academy Engraved LET, Plain;
