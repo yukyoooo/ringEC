@@ -1,4 +1,77 @@
-
-.single-main {
+a {
+	text-decoration:none;
+	color:#4D4D4D;
+}
+.single {
 	background-color: #EDEDED;
+	padding: 200px 0;
+	font-font:Apple Chancery, Chancery;
+}
+
+.single-wrapper {
+	margin: 0 auto;
+	background-color: white;
+	width:800px;
+	padding: 0 30px 200px 30px;
+}
+.single-header {
+	padding: 30px 0 0 0;
+}
+.single-header h2{
+	font-family: Academy Engraved LET, Plain;
+	font-size:16px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+.single-header img{
+	width: 100%;
+}
+
+.single-entry__inner{
+	margin-top: 20px;
+}
+.single-entry__time{
+	margin: 0;
+}
+.single-entry__ttl{
+	margin:5px 0;
+}
+
+ul{
+	padding-left:0;
+}
+
+li{
+	list-style:none;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.single-wrapper {
+		width: 480px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.single {
+		padding: 100px 0;
+	}
+
+	.single-wrapper {
+		width: 80%;
+		padding: 0 10px 50px 10px;
+		min-height: 750px;
+	}
+
+	.single-header h2 {
+		font-family: Academy Engraved LET, Plain;
+		font-size: 12px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid black;
+	}
+
+	.single-header {
+		padding: 10px 0 0 0;
+	}
 }
