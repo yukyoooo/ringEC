@@ -41,6 +41,33 @@
 	border: 1px gray solid;
 }
 
+article {
+	position:relative;
+}
+.mask-soldout{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index:100;
+}
+.mask-soldout .soldout{
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+}
+.mask-soldout .soldout>p{
+	font-size:34px;
+	font-weight:bold;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	color:#fff;
+}
+
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 	.products-wrapper{
@@ -75,5 +102,8 @@
 		/*top:-3px;*/
 		/*box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);*/
 		border: 1px white solid;
+	}
+	.mask-soldout .soldout>p {
+		font-size: 20px;
 	}
 }

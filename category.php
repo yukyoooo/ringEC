@@ -40,6 +40,21 @@ get_header();
 							</div>
 						</a>
 					</article>
+					<?php else: ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<div class="mask-soldout"><div class="soldout"><p>SOLD OUT</p></div></div>
+						<div class="itemimg-soldout">
+							<?php usces_the_itemImage( 0, 300, 300 ); ?>
+							<?php do_action( 'usces_theme_favorite_icon' ); ?>
+						</div>
+						<div class="itemname-soldout">
+							<p><?php usces_the_itemName(); ?></p>
+						</div>
+						<div class="itemprice-soldout">
+							<p><?php usces_the_firstPriceCr(); ?></p>
+							<!--								--><?php //usces_guid_tax(); ?>
+						</div>
+					</article>
 					<?php endif; ?>
 				<?php endwhile; ?>
 				</div><!-- .cat-il -->

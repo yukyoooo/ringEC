@@ -101,7 +101,7 @@ get_header();
 
 
 												<?php if ( ! usces_have_zaiko() ) : ?>
-													<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( 'At present we cannot deal with this product.', 'welcart_basic' ) ); ?></div>
+													<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( '売り切れです。入荷をお待ちください。', 'welcart_basic' ) ); ?></div>
 												<?php else : ?>
 													<div class="c-box">
 														<span class="quantity"><?php esc_html_e( 'Quantity', 'usces' ); ?><?php usces_the_itemQuant(); ?></span>
