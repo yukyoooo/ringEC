@@ -103,10 +103,15 @@ get_header();
 												<?php if ( ! usces_have_zaiko() ) : ?>
 													<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( '売り切れです。入荷をお待ちください。', 'welcart_basic' ) ); ?></div>
 												<?php else : ?>
-													<div class="c-box">
-														<span class="quantity"><?php esc_html_e( 'Quantity', 'usces' ); ?><?php usces_the_itemQuant(); ?></span>
-														<span class="cart-button"><?php usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?></span>
-													</div>
+<!--													<div class="c-box">-->
+<!--														<span class="quantity">--><?php //esc_html_e( 'Quantity', 'usces' ); ?><!----><?php //usces_the_itemQuant(); ?><!--</span>-->
+<!--														<span class="cart-button">--><?php //usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?><!--</span>-->
+<!--													</div>-->
+													<a href="/form/?
+														price=<?php echo(usces_the_itemCpriceCr()); ?>
+														&sku=<?php usces_the_itemCode(); ?>
+														&imgUrl=<?php usces_the_itemImageURL(); ?>
+													">購入のお問い合わせへ</a>
 												<?php endif; ?>
 												<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku( 'return' ) ); ?></div>
 											</div><!-- .skuform -->
