@@ -12,7 +12,11 @@
 			<h2 class="single-header__title"><?php the_title(); ?></h2>
 		</div>
 		<div class="single-body">
-			<?php echo do_shortcode('[contact-form-7 id="35d89e3" title="購入依頼フォーム"]'); ?>
+			<?php if($_SERVER["SERVER_NAME"] === 'takuhiko.local') : ?>
+				<?php echo do_shortcode('[contact-form-7 id="35d89e3" title="購入依頼フォーム"]'); ?>
+			<?php else : ?>
+				<?php echo do_shortcode('[contact-form-7 id="d8d2ece" title="購入依頼"]'); ?>
+			<?php endif ?>
 		</div>
 	</div>
 </div>
