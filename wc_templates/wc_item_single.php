@@ -107,11 +107,15 @@ get_header();
 <!--														<span class="quantity">--><?php //esc_html_e( 'Quantity', 'usces' ); ?><!----><?php //usces_the_itemQuant(); ?><!--</span>-->
 <!--														<span class="cart-button">--><?php //usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?><!--</span>-->
 <!--													</div>-->
-													<a href="/form/?
-														price=<?php echo(usces_the_itemCpriceCr()); ?>
-														&sku=<?php usces_the_itemCode(); ?>
-														&imgUrl=<?php usces_the_itemImageURL(); ?>
-													">購入のお問い合わせへ</a>
+													<div class="c-box">
+														<span class="cart-button skubutton"><a href="/form/?
+															price=<?php echo(usces_the_itemCpriceCr()); ?>
+															&code=<?php usces_the_itemCode(); ?>
+															&imgUrl=<?php usces_the_itemImageURL(); ?>
+														">購入依頼へ</a>
+														</span>
+													</div>
+
 												<?php endif; ?>
 												<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku( 'return' ) ); ?></div>
 											</div><!-- .skuform -->

@@ -1,0 +1,98 @@
+a {
+	text-decoration:none;
+	color:#4D4D4D;
+}
+.form-main {
+	background-color: #EDEDED;
+	padding: 200px 0;
+	font-font:Apple Chancery, Chancery;
+}
+
+.form-wrapper {
+	margin: 0 auto;
+	background-color: white;
+	width:400px;
+	padding: 0 30px 50px 30px;
+	min-height: 600px;
+}
+.form-wrapper img{
+	width: 100%;
+	margin-top:10px;
+}
+.form-wrapper input{
+	height: 2.4em;
+	width: 90%;
+	border-radius: 4px;
+	padding: 0 5%;
+	border: none;
+	box-shadow: 0 0 0 1px #ccc inset;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.wpcf7-submit {
+	margin-top:30px;
+	width: 100% !important;
+	height: 4em!important;
+}
+.form-header {
+	padding: 30px 0 0 0;
+}
+.form-header h2{
+	font-family: Academy Engraved LET, Plain;
+	font-size:16px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+.form-header img{
+	width: 100%;
+}
+
+.form-entry__inner{
+	margin-top: 20px;
+}
+.form-entry__time{
+	margin: 0;
+}
+.form-entry__ttl{
+	margin:5px 0;
+}
+
+ul{
+	padding-left:0;
+}
+
+li{
+	list-style:none;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.form-wrapper {
+		width: 480px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.form-main {
+		padding: 100px 0;
+	}
+
+	.form-wrapper {
+		width: 80%;
+		padding: 0 10px 50px 10px;
+		min-height: 400px;
+	}
+
+	.form-header h2 {
+		font-family: Academy Engraved LET, Plain;
+		font-size: 12px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid black;
+	}
+
+	.form-header {
+		padding: 10px 0 0 0;
+	}
+}

@@ -1,17 +1,14 @@
 <?php get_header(); ?>
 
-<?php
-	$_SESSION["your_name"] = "なまえ";
-	$_SESSION["email"] = "test@gmail.com";
-	$_SESSION["tel"] = "09012345678";
-?>
-
-<div class="single">
-	<div class="single-wrapper">
-		<div class="single-header">
-			<h2 class="single-header__title"><?php the_title(); ?></h2>
+<div class="form-main">
+	<div class="form-wrapper">
+		<div class="form-header">
+			<h2 class="form-header__title">購入依頼</h2>
 		</div>
-		<div class="single-body">
+		<div class="form-img">
+			<img src="<?php echo($_GET["imgUrl"]) ?>" >
+		</div>
+		<div class="form-body ">
 			<?php if($_SERVER["SERVER_NAME"] === 'takuhiko.local') : ?>
 				<?php echo do_shortcode('[contact-form-7 id="35d89e3" title="購入依頼フォーム"]'); ?>
 			<?php else : ?>
@@ -21,13 +18,9 @@
 	</div>
 </div>
 
-<script>
-	const cf7 = document.querySelector('.wpcf7-form')
-	const render = (html) => cf7.innerHTML = html
-
-	const renderCf7Component = () => {
-		const component = `<?php require('cf7-component.php') ?>`
-		render(component)
-	}
-	renderCf7Component()
+<script type="text/javascript">
+	let elementPrice = document.getElementById('product-price');
+	elementPrice.disabled = true;
+	let elementCode = document.getElementById('product-code');
+	elementCode.disabled = true;
 </script>

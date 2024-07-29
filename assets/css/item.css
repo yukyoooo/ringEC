@@ -78,6 +78,9 @@
 .c-box span{
 	font-size: 12px;
 }
+.skubutton a{
+	color: white;
+}
 .skubutton{
 	color: #fff;
 	background-color: #4D4D4D;
