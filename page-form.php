@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 	let elementPrice = document.getElementById('product-price');
-	elementPrice.disabled = true;
+	elementPrice.readOnly = true;
 	let elementCode = document.getElementById('product-code');
-	elementCode.disabled = true;
+	elementCode.readOnly = true;
 </script>
