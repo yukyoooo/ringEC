@@ -83,6 +83,12 @@ li{
 		width: 80%;
 		padding: 0 10px 50px 10px;
 		min-height: 400px;
+		margin-bottom: 100px;
+	}
+
+	.form-wrapper input {
+		width: 96%;
+		padding: 0 2%;
 	}
 
 	.form-header h2 {
