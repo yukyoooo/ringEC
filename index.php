@@ -82,13 +82,13 @@
 	</div>
 </div>
 <div class="top-sns-wrapper">
-	<a href="インスタのプロフィールURL" class="flowbtn my_instagram1">
+	<a href="https://www.instagram.com/signet.ring_gentry?igsh=aTl2czJ1eWN3dzFr&utm_source=qr" class="flowbtn my_instagram1">
 		<i class="fa-brands fa-instagram"></i>
 	</a>
-	<a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn my_line1">
-		<i class="fa-brands fa-line"></i>
-	</a>
-	<a href="TikTokプロフィールURL" class="flowbtn my_tiktok1">
+<!--	<a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn my_line1">-->
+<!--		<i class="fa-brands fa-line"></i>-->
+<!--	</a>-->
+	<a href="https://www.tiktok.com/@gentry.1920?_t=8oHy4vxAAFB&_r=1" class="flowbtn my_tiktok1">
 		<i class="fa-brands fa-tiktok"></i>
 	</a>
 </div>
