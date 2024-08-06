@@ -112,5 +112,5 @@
 			}
 		}
 	}
-	setInterval(changeImage, 5000);
+	setInterval(changeImage, 10000);
 </script>

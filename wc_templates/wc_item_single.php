@@ -72,61 +72,6 @@ get_header();
 	<!--								--><?php //usces_the_itemPriceCr(); ?><!----><?php //usces_guid_tax(); ?>
 								</div>
 								<?php usces_crform_the_itemPriceCr_taxincluded(); ?>
-
-								<div class="item-info">
-									<?php
-										$item_custom = usces_get_item_custom( $post->ID, 'list', 'return' );
-										if ( $item_custom ) :
-											echo wp_kses_post( $item_custom );
-										endif;
-									?>
-
-									<form action="<?php echo esc_url( USCES_CART_URL ); ?>" method="post">
-
-										<?php do { ?>
-											<div class="skuform">
-												<?php do_action( 'usces_theme_item_single_before_options' ); ?>
-
-												<?php if ( usces_is_options() ) : ?>
-													<dl class="item-option">
-														<?php while ( usces_have_options() ) : ?>
-															<dt><?php usces_the_itemOptName(); ?></dt>
-															<dd><?php usces_the_itemOption( usces_getItemOptName(), '' ); ?></dd>
-														<?php endwhile; ?>
-													</dl>
-												<?php endif; ?>
-
-												<?php usces_the_itemGpExp(); ?>
-
-
-
-												<?php if ( ! usces_have_zaiko() ) : ?>
-													<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( '売り切れです。入荷をお待ちください。', 'welcart_basic' ) ); ?></div>
-												<?php else : ?>
-<!--													<div class="c-box">-->
-<!--														<span class="quantity">--><?php //esc_html_e( 'Quantity', 'usces' ); ?><!----><?php //usces_the_itemQuant(); ?><!--</span>-->
-<!--														<span class="cart-button">--><?php //usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?><!--</span>-->
-<!--													</div>-->
-													<div class="c-box">
-														<span class="cart-button skubutton"><a href="/form/?
-															price=<?php echo(usces_the_itemCpriceCr()); ?>
-															&code=<?php usces_the_itemCode(); ?>
-															&imgUrl=<?php usces_the_itemImageURL(); ?>
-														">購入依頼へ</a>
-														</span>
-													</div>
-
-												<?php endif; ?>
-												<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku( 'return' ) ); ?></div>
-											</div><!-- .skuform -->
-										<?php } while ( usces_have_skus() ); ?>
-
-										<?php do_action( 'usces_action_single_item_inform' ); ?>
-									</form>
-
-									<?php do_action( 'usces_action_single_item_outform' ); ?>
-
-								</div><!-- .item-info -->
 							</div>
 
 
@@ -158,6 +103,60 @@ get_header();
 						</div>
 						<?php usces_assistance_item( $post->ID, __( 'An article concerned', 'usces' ) ); ?>
 					</div><!-- #itemspage -->
+					<div class="item-info">
+						<?php
+							$item_custom = usces_get_item_custom( $post->ID, 'list', 'return' );
+							if ( $item_custom ) :
+								echo wp_kses_post( $item_custom );
+							endif;
+						?>
+
+						<form action="<?php echo esc_url( USCES_CART_URL ); ?>" method="post">
+
+							<?php do { ?>
+								<div class="skuform">
+									<?php do_action( 'usces_theme_item_single_before_options' ); ?>
+
+									<?php if ( usces_is_options() ) : ?>
+										<dl class="item-option">
+											<?php while ( usces_have_options() ) : ?>
+												<dt><?php usces_the_itemOptName(); ?></dt>
+												<dd><?php usces_the_itemOption( usces_getItemOptName(), '' ); ?></dd>
+											<?php endwhile; ?>
+										</dl>
+									<?php endif; ?>
+
+									<?php usces_the_itemGpExp(); ?>
+
+
+
+									<?php if ( ! usces_have_zaiko() ) : ?>
+										<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( '売り切れです。入荷をお待ちください。', 'welcart_basic' ) ); ?></div>
+									<?php else : ?>
+										<!--													<div class="c-box">-->
+										<!--														<span class="quantity">--><?php //esc_html_e( 'Quantity', 'usces' ); ?><!----><?php //usces_the_itemQuant(); ?><!--</span>-->
+										<!--														<span class="cart-button">--><?php //usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?><!--</span>-->
+										<!--													</div>-->
+										<div class="c-box">
+														<span class="cart-button skubutton"><a href="/form/?
+															price=<?php echo(usces_the_itemCpriceCr()); ?>
+															&code=<?php usces_the_itemCode(); ?>
+															&imgUrl=<?php usces_the_itemImageURL(); ?>
+														">購入依頼へ</a>
+														</span>
+										</div>
+
+									<?php endif; ?>
+									<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku( 'return' ) ); ?></div>
+								</div><!-- .skuform -->
+							<?php } while ( usces_have_skus() ); ?>
+
+							<?php do_action( 'usces_action_single_item_inform' ); ?>
+						</form>
+
+						<?php do_action( 'usces_action_single_item_outform' ); ?>
+
+					</div><!-- .item-info -->
 				</div><!-- .storycontent -->
 			</article>
 

@@ -50,6 +50,8 @@
 	text-align: center;
 	font-size: 30px;
 	padding-top:50px;
+	width: 40%;
+
 }
 .price_wrapper h2{
 	margin:0;
@@ -76,8 +78,13 @@
 	border: 2px solid #ddd;
 	box-sizing: border-box;
 }
+.c-box{
+	width:140px;
+	margin: 0 auto;
+}
 .c-box span{
-	font-size: 12px;
+	text-align: center;
+	font-size: 20px;
 }
 .skubutton a{
 	color: white;
@@ -207,10 +214,10 @@
 		margin-top:100px;
 	}
 	.detail-box{
-		font-size: 4px;
+		font-size: 6px;
 		margin-top:40px;
-		padding-right:5%;
-		margin-left: 30px;
+		padding-right:2%;
+		margin-left: 20px;
 	}
 	.detail-box ul{
 		padding-left:5px;
