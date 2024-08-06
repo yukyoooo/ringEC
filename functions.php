@@ -7,6 +7,11 @@
 		return $args;
 	}
 
+//Contact Form 7 のreCAPTCHAのしきい値変更
+add_filter( 'wpcf7_recaptcha_threshold', 'my_wpcf7_recaptcha_threshold' );
+function my_wpcf7_recaptcha_threshold($score){
+	return 0.29;
+}
 	/*YubinBangoライブラリ*/
 
 	wp_enqueue_script( 'yubinbango', 'https://yubinbango.github.io/yubinbango/yubinbango.js', array(), null, true );

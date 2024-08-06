@@ -5,14 +5,15 @@
 }
 
 .back-btn{
-	background-color: #EDEDED;
+	background-color: #a9a9a9;
 	position: fixed;
-	top: 80px;
+	top: 120px;
 	left: 0;
-	text-decoration:none;
-	color:#020202;
+	text-decoration: none;
+	color: black;
 	font-family: Hiragino Kaku Gothic ProN;
-	padding: 20px 10px;
+	padding: 30px 15px;
+	z-index: 150;
 }
 .item-page{
 	display: flex;

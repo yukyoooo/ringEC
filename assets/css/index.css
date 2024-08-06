@@ -12,12 +12,30 @@
 .top-wrapper{
 	margin-top:60px;
 	height: 1000px;
-	background-image: url('/wp-content/themes/ringEC/assets/images/00_top.JPG');
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* 切り替え前の画像と切り替え後の画像を設定 */
+	background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'), url('/wp-content/themes/ringEC/assets/images/00_top2.JPG');
+	/* アニメーションを設定 */
+	animation: image_anime 8s ease infinite;
+	/* animationを開始する時間を設定 */
+	animation-delay: 2s;
 }
+
+@keyframes image_anime {
+	0% {
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'); /* 背景画像1を指定 */
+	}
+	50% {
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top2.JPG'); /* 背景画像2を指定 */
+	}
+	100% {
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'); /* 背景画像1を指定 */
+	}
+}
+
 .top-text p{
 	color: #fff0f5;
 	padding-top:50px;
@@ -70,7 +88,10 @@
 	width: 500px;
 	height: 800px;
 	margin-right: 40px;
+	position: relative;
 }
+
+
 .top-pics img{
 	width: 100%;
 	height: 100%;
@@ -84,10 +105,29 @@
 .top-pics-right-top{
 	height: 370px;
 	margin-bottom: 60px;
+	position: relative;
+}
+.top-pics-right-top img{
+	position: absolute;
+	opacity: 0;
+	transition: all 3s ease;
+}
+.top-pics-right-top img.active {
+	opacity: 1;
 }
 .top-pics-right-bottom{
 	height: 370px;
+	position: relative;
 }
+.top-pics-right-bottom img{
+	position: absolute;
+	opacity: 0;
+	transition: all 1s ease;
+}
+.top-pics-right-bottom img.active {
+	opacity: 1;
+}
+
 
 .top-pics2{
 	margin-top:100px;

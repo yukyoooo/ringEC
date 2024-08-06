@@ -21,14 +21,16 @@
 </div>
 <div class="top-pics">
 	<div class="top-pics-left">
-		<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_left.jpg">
+		<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_left1.jpg">
 	</div>
-	<div class="top-pics-right">
+	<div class="top-pics-right" id="top-pics-right">
 		<div class="top-pics-right-top">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_1.jpg">
+			<img class="no-active" src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_up1.jpg">
+			<img class="active" src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_up2.jpg">
 		</div>
 		<div class="top-pics-right-bottom">
-			<img src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_2.jpg">
+			<img class="active" src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_down1.jpg">
+			<img class="no-active" src="<?php bloginfo('template_url') ?>/assets/images/00_top_right_down2.jpg">
 		</div>
 	</div>
 </div>
@@ -95,3 +97,20 @@
 
 
 <?php get_footer(); ?>
+<script>
+
+	function changeImage() {
+		const images = document.images;
+		for(let image of images) {
+		// images.forEach((elem)=>{
+			if(image.classList.contains('active')){
+				image.classList.remove('active')
+				image.classList.add('no-active')
+			}else if(image.classList.contains('no-active')){
+				image.classList.remove('no-active')
+				image.classList.add('active')
+			}
+		}
+	}
+	setInterval(changeImage, 5000);
+</script>
