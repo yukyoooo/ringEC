@@ -17,7 +17,7 @@
 	justify-content: center;
 	align-items: center;
 	/* 切り替え前の画像と切り替え後の画像を設定 */
-	background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'), url('/wp-content/themes/ringEC/assets/images/00_top2.JPG');
+	background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.jpg'), url('/wp-content/themes/ringEC/assets/images/00_top2.jpg');
 	/* アニメーションを設定 */
 	animation: image_anime 8s ease infinite;
 	/* animationを開始する時間を設定 */
@@ -26,13 +26,13 @@
 
 @keyframes image_anime {
 	0% {
-		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'); /* 背景画像1を指定 */
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.jpg'); /* 背景画像1を指定 */
 	}
 	50% {
-		background-image: url('/wp-content/themes/ringEC/assets/images/00_top2.JPG'); /* 背景画像2を指定 */
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top2.jpg'); /* 背景画像2を指定 */
 	}
 	100% {
-		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.JPG'); /* 背景画像1を指定 */
+		background-image: url('/wp-content/themes/ringEC/assets/images/00_top1.jpg'); /* 背景画像1を指定 */
 	}
 }
 
