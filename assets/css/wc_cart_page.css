@@ -1,0 +1,79 @@
+a {
+	text-decoration:none;
+	color:#4D4D4D;
+}
+.cart-page {
+	background-color: #EDEDED;
+	padding: 200px 0;
+	font-font:Apple Chancery, Chancery;
+}
+
+.cart-page .post {
+	margin: 0 auto;
+	background-color: white;
+	width:400px;
+	padding: 0 30px 50px 30px;
+	min-height: 600px;
+}
+.cart-page h1{
+	font-family: Academy Engraved LET, Plain;
+	font-size:16px;
+	padding: 30px 0 10px 0;
+	border-bottom: 1px solid black;
+}
+.cart-page input{
+	border: none;
+	/*appearance: none;*/
+	padding: 5px 10px;
+	/*-webkit-appearance: none;*/
+	-moz-appearance: none;
+	background-color: white;
+	border:0.1px solid gray;
+}
+.upbutton p{
+	text-align: left;
+}
+.send {
+	text-align: center;
+	width: auto;
+	margin-top: 15px;
+	padding-top: 15px;
+	margin-top:50px;
+}
+tbody {
+	font-size: 12px;
+}
+tbody .num{
+	display: none;
+}
+tbody .productname {
+	width:100%;
+}
+tbody .unitprice {
+	display: none;
+}
+tbody .stock{
+	display: none;
+}
+tfoot {
+	border-top: 1px solid #303030 !important;
+}
+tfoot th{
+	background-color: white !important;
+	color: #303030 !important;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:none !important;
+}
+
+table th,table td{
+	padding: 10px 0;
+	border:none !important;
+}
+
+table tr:nth-child(odd){
+	background-color: white;
+}

@@ -103,8 +103,12 @@ get_header();
 													<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __( '売り切れです。入荷をお待ちください。', 'welcart_basic' ) ); ?></div>
 												<?php else : ?>
 													<div class="c-box">
-														<span class="quantity"><?php esc_html_e( 'Quantity', 'usces' ); ?><?php usces_the_itemQuant(); ?></span>
-														<span class="cart-button"><?php usces_the_itemSkuButton(__( 'Add to Shopping Cart', 'usces' ), 0 ); ?></span>
+														<div class="quantity-wrapper"
+															<span class="quantity"><?php esc_html_e( 'Quantity', 'usces' ); ?><?php usces_the_itemQuant(); ?></span>
+														</div>
+														<div class="cart-button-wrapper">
+															<span class="cart-button"><?php usces_the_itemSkuButton(__( '購入手続き', 'usces' ), 0 ); ?></span>
+														</div>
 													</div>
 <!--													<div class="c-box">-->
 <!--														<span class="cart-button skubutton"><a href="/form/?-->

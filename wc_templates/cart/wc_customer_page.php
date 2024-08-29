@@ -23,15 +23,6 @@ get_header();
 
 				<div id="customer-info">
 
-					<div class="cart_navi">
-						<ul>
-							<li><?php esc_html_e( '1.Cart', 'usces' ); ?></li>
-							<li class="current"><?php esc_html_e( '2.Customer Info', 'usces' ); ?></li>
-							<li><?php esc_html_e( '3.Deli. & Pay.', 'usces' ); ?></li>
-							<li><?php esc_html_e( '4.Confirm', 'usces' ); ?></li>
-						</ul>
-					</div><!-- .cart_navi -->
-
 					<div class="header_explanation">
 						<?php do_action( 'usces_action_customer_page_header' ); ?>
 					</div><!-- .header_explanation -->

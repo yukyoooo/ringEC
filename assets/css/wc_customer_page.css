@@ -1,0 +1,10 @@
+#wc_customer textarea{
+	font-size: 12px;
+}
+
+#wc_delivery textarea{
+	font-size: 12px;
+}
+.hidden {
+	display: none;
+}

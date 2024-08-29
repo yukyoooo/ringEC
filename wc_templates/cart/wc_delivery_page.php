@@ -24,15 +24,6 @@ usces_delivery_info_script();
 
 				<div id="delivery-info">
 
-					<div class="cart_navi">
-						<ul>
-							<li><?php esc_html_e( '1.Cart', 'usces' ); ?></li>
-							<li><?php esc_html_e( '2.Customer Info', 'usces' ); ?></li>
-							<li class="current"><?php esc_html_e( '3.Deli. & Pay.', 'usces' ); ?></li>
-							<li><?php esc_html_e( '4.Confirm', 'usces' ); ?></li>
-						</ul>
-					</div><!-- .cart_navi -->
-
 					<div class="header_explanation">
 						<?php do_action( 'usces_action_delivery_page_header' ); ?>
 					</div><!-- .header_explanation -->
@@ -71,37 +62,37 @@ usces_delivery_info_script();
 
 						<table class="customer_form" id="time">
 						<?php if ( wel_have_shipped() ) : ?>
-							<tr>
-								<th scope="row">
-									<?php esc_html_e( 'shipping option', 'usces' ); ?>
-								</th>
-								<td colspan="2">
+<!--							<tr>-->
+<!--								<th scope="row">-->
+<!--									--><?php //esc_html_e( 'shipping option', 'usces' ); ?>
+<!--								</th>-->
+								<td colspan="2" class="hidden">
 									<?php usces_the_delivery_method( $usces_entries['order']['delivery_method'] ); ?>
 								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<?php esc_html_e( 'Delivery date', 'usces' ); ?>
-								</th>
-								<td colspan="2">
-									<?php usces_the_delivery_date( $usces_entries['order']['delivery_date'] ); ?>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<?php esc_html_e( 'Delivery Time', 'usces' ); ?>
-								</th>
-								<td colspan="2">
-									<?php usces_the_delivery_time( $usces_entries['order']['delivery_time'] ); ?>
-								</td>
-							</tr>
+<!--							</tr>-->
+<!--							<tr>-->
+<!--								<th scope="row">-->
+<!--									--><?php //esc_html_e( 'Delivery date', 'usces' ); ?>
+<!--								</th>-->
+<!--								<td colspan="2">-->
+<!--									--><?php //usces_the_delivery_date( $usces_entries['order']['delivery_date'] ); ?>
+<!--								</td>-->
+<!--							</tr>-->
+<!--							<tr>-->
+<!--								<th scope="row">-->
+<!--									--><?php //esc_html_e( 'Delivery Time', 'usces' ); ?>
+<!--								</th>-->
+<!--								<td colspan="2">-->
+<!--									--><?php //usces_the_delivery_time( $usces_entries['order']['delivery_time'] ); ?>
+<!--								</td>-->
+<!--							</tr>-->
 						<?php endif; ?>
 							<tr>
 								<th scope="row">
 									<em><?php esc_html_e( '*', 'usces' ); ?></em>
 									<?php esc_html_e( 'payment method', 'usces' ); ?>
 								</th>
-								<td colspan="2">
+								<td colspan="2" class="">
 									<?php usces_the_payment_method( $usces_entries['order']['payment_name'] ); ?>
 								</td>
 							</tr>
@@ -144,11 +135,14 @@ usces_delivery_info_script();
 						<table class="customer_form" id="notes_table">
 							<tr>
 								<?php $entry_order_note = ( empty( $usces_entries['order']['note'] ) ) ? apply_filters( 'usces_filter_default_order_note', null ) : $usces_entries['order']['note']; ?>
-								<th scope="row">
-									<?php esc_html_e( 'Notes', 'usces' ); ?>
-								</th>
+<!--								<th scope="row">-->
+<!--									--><?php //esc_html_e( 'Notes', 'usces' ); ?>
+<!--								</th>-->
 								<td colspan="2">
-									<textarea name="offer[note]" id="note" class="notes"><?php echo esc_html( $entry_order_note ); ?></textarea>
+									<p>指輪のサイズを記載ください「指輪のサイズは◯号」</p>
+									<p>指輪のサイズがわからない場合は測定キットを先にお送りします。
+										「測定キットを希望」と記載ください。</p>
+									<textarea name="offer[note]" id="note" class="notes" placeholder="指輪のサイズは◯号"><?php echo esc_html( $entry_order_note ); ?></textarea>
 								</td>
 							</tr>
 						</table>

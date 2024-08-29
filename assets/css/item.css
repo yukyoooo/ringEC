@@ -77,30 +77,32 @@
 	box-sizing: border-box;
 }
 .c-box{
-	width:160px;
+	width:140px;
 	margin: 0 auto;
 }
 .c-box span{
 	font-size: 16px;
-	padding: 10px 40px;
 }
 .skubutton a{
 	color: white;
 }
 .skubutton{
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
 	color: #fff;
-	background-color: #4D4D4D;
-	opacity: 0.6;
+	background-color: #b1aeae;
 	border: none;
-	padding: 5px 20px;
 	margin: 10px 0 0 0;
 }
 .skubutton:hover{
 	color: #fff;
-	background: #4D4D4D;
-	opacity: 1;
-
+	opacity: 0.6;
 }
+.quantity-wrapper{
+	display: none;
+}
+
 
 
 
