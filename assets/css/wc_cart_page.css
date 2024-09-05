@@ -21,12 +21,24 @@ a {
 	padding: 30px 0 10px 0;
 	border-bottom: 1px solid black;
 }
-.cart-page input{
+.send input{
 	border: none;
-	/*appearance: none;*/
+	appearance: none;
 	padding: 5px 10px;
-	/*-webkit-appearance: none;*/
+	-webkit-appearance: none;
 	-moz-appearance: none;
+	background-color: white;
+	border:0.1px solid gray;
+}
+#delivery_flag input{
+	border: none;
+	padding: 5px 10px;
+	background-color: white;
+	border:0.1px solid gray;
+}
+#time input{
+	border: none;
+	padding: 5px 10px;
 	background-color: white;
 	border:0.1px solid gray;
 }
