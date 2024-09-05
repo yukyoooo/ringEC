@@ -26,13 +26,21 @@
 	font-size:12px !important;
 }
 .agree_form_send input, .settlement_form_send input{
+	-webkit-border: none;
 	border: none;
 	appearance: none;
+	-webkit-padding: 5px 10px;
 	padding: 5px 10px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	-webkit-background-color: white;
 	background-color: white;
-	border:0.1px solid gray;
+	-webkit-border:0.1px solid gray;
+	border: 0.1px solid gray;
+	-webkit-color:black;
+	color: black;
+	-webkit-font-weight: normal;
+	font-weight: normal !important;
 }
 .ui-dialog-titlebar{
 	padding:5px 10px;

@@ -22,25 +22,20 @@ a {
 	border-bottom: 1px solid black;
 }
 .send input{
-	border: none;
+	-webkit-border: none;
+	border:none;
 	appearance: none;
 	padding: 5px 10px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	-webkit-background-color: white;
 	background-color: white;
+	-webkit-border:0.1px solid gray;
 	border:0.1px solid gray;
-}
-#delivery_flag input{
-	border: none;
-	padding: 5px 10px;
-	background-color: white;
-	border:0.1px solid gray;
-}
-#time input{
-	border: none;
-	padding: 5px 10px;
-	background-color: white;
-	border:0.1px solid gray;
+	-webkit-color:black;
+	color:black;
+	-webkit-font-weight: normal;
+	font-weight: normal !important;
 }
 #cart input.quantity{
 	width: 10px !important;
