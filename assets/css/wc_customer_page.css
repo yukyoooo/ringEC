@@ -8,3 +8,57 @@
 .hidden {
 	display: none;
 }
+.send {
+	border-top-color: #303030 !important;
+}
+#fax_row {
+	display: none;
+}
+#customer-info th{
+	width: 25% !important;
+	font-size: 10px !important;
+	padding: 3px !important;
+}
+.header_explanation{
+	padding:0 !important;
+}
+.header_explanation p{
+	font-size:12px !important;
+}
+.agree_form_send input, .settlement_form_send input{
+	border: none;
+	appearance: none;
+	padding: 5px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: white;
+	border:0.1px solid gray;
+}
+.ui-dialog-titlebar{
+	padding:5px 10px;
+	margin-bottom:10px;
+}
+.settlement_form tbody{
+	font-size:10px;
+}
+.ui-dialog-content{
+	padding:5px 10px 5px 5px !important;
+}
+.settlement_form tbody th{
+	width: 55px;
+}
+.settlement_form table th, table td {
+	padding:0;
+}
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.customer_form p{
+		font-size: 11px;
+	}
+
+	#purchase_form .send input{
+		font-size: 10px;
+	}
+}

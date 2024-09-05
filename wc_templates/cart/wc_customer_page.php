@@ -67,7 +67,7 @@ get_header();
 							<tr>
 								<th scope="row">
 									<em><?php esc_html_e( '*', 'usces' ); ?></em>
-									<?php esc_html_e( 'e-mail adress', 'usces' ); ?>
+									<?php esc_html_e( 'e-mail', 'usces' ); ?>
 								</th>
 								<td colspan="2">
 									<input name="customer[mailaddress1]" id="mailaddress1" type="text" value="<?php echo esc_attr( $usces_entries['customer']['mailaddress1'] ); ?>" style="ime-mode: inactive" autocomplete="off" />
@@ -76,7 +76,7 @@ get_header();
 							<tr>
 								<th scope="row">
 									<em><?php esc_html_e( '*', 'usces' ); ?></em>
-									<?php esc_html_e( 'e-mail adress', 'usces' ); ?>(<?php esc_html_e( 'Re-input', 'usces' ); ?>)
+									<?php esc_html_e( 'e-mail', 'usces' ); ?>(<?php esc_html_e( 'Re-input', 'usces' ); ?>)
 								</th>
 								<td colspan="2">
 									<input name="customer[mailaddress2]" id="mailaddress2" type="text" value="<?php echo esc_attr( $usces_entries['customer']['mailaddress2'] ); ?>" style="ime-mode: inactive" autocomplete="off" />

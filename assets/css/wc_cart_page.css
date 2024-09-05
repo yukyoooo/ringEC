@@ -30,15 +30,21 @@ a {
 	background-color: white;
 	border:0.1px solid gray;
 }
+#cart input.quantity{
+	width: 10px !important;
+}
+
 .upbutton p{
 	text-align: left;
 }
 .send {
 	text-align: center;
 	width: auto;
-	margin-top: 15px;
 	padding-top: 15px;
-	margin-top:50px;
+	margin-top:15px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #303030;
 }
 tbody {
 	font-size: 12px;
@@ -76,4 +82,24 @@ table th,table td{
 
 table tr:nth-child(odd){
 	background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+	.cart-page .post {
+		width: 80%;
+		padding: 0 10px 50px 10px;
+		min-height: 400px;
+		margin-bottom: 150px;
+	}
+
+	.upbutton p{
+		font-size: 10px;
+	}
+	.upbutton input{
+		margin-top:5px;
+	}
+
+
 }
