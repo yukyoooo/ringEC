@@ -30,7 +30,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin-left: 10px;
 }
 .detail-itemimg{
 	width: 240px;
@@ -50,6 +49,7 @@
 .price_wrapper{
 	font-size: 30px;
 	padding-top:50px;
+	margin-left:5%;
 }
 .price_wrapper h2{
 	margin:0;
@@ -64,8 +64,9 @@
 	margin-top:100px;
 }
 .detail-box{
-	font-size: 10px;
+	font-size: 16px;
 	font-family: Academy Engraved LET, Plain;
+	width: 50%;
 }
 .skuquantity{
 	width: 100px;
@@ -206,6 +207,7 @@
 		font-size: 15px;
 		width: 100%;
 		padding:0 10% 10% 10%;
+		margin-left:0;
 	}
 	.price_wrapper h2{
 		font-weight: normal;
@@ -214,6 +216,7 @@
 		font-size: 10px;
 		margin-top:0px;
 		padding:0 10% 10% 10%;
+		width:100%;
 	}
 	.detail-box ul{
 		padding-left:5px;
