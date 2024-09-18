@@ -16,10 +16,12 @@
 	z-index: 150;
 }
 .item-page{
+	margin: auto;
+	max-width: 1080px;
 	display: flex;
+	justify-content: space-around;
 }
 .img-box{
-	margin-left: 100px;
 	width: 550px;
 }
 .img-box img{
@@ -30,6 +32,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin-left:50px;
 }
 .detail-itemimg{
 	width: 240px;
