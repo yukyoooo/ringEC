@@ -71,9 +71,6 @@
 	<div class="top-text2">
 		<p>Gentry</p>
 	</div>
-	<div class="top-text3">
-		<p>ただ一つのもの</p>
-	</div>
 	<div class="product-name2">
 		<p>Signet Ring</p>
 	</div>
