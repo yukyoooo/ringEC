@@ -53,10 +53,31 @@ li{
 	}
 }
 
+
+.about-wrapper {
+	margin: 0 auto;
+	background-color: white;
+	width: 800px;
+	padding: 0;
+}
+.about-body{
+	text-align: center;
+}
+.about-img img{
+	margin-top:100px;
+	width: 100%;
+	margin-bottom: -7px;
+	filter: alpha(opacity=60);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=60)";  /* ie 8 */
+	-moz-opacity:0.6;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.6;              /* Safari 1.x */
+	opacity:0.6;
+}
+
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 	.conetnts {
-		padding: 100px 0;
+		padding: 100px 0 120px 0;
 	}
 	.contents-wrapper {
 		width:85%;
@@ -82,5 +103,13 @@ li{
 	}
 	.entry__ttl{
 		margin:5px 0;
+	}
+
+	.about-wrapper {
+		width:85%;
+		padding: 0;
+	}
+	.about-img img {
+		margin-top: 50px;
 	}
 }
