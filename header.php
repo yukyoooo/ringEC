@@ -16,7 +16,7 @@
 		<nav class="pc-nav">
 			<ul>
 				<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-<!--				<li><a href="#">About</a></li>-->
+				<li><a href="/about/">About</a></li>
 				<li><a href="/news/">News</a></li>
 			</ul>
 		</nav>
