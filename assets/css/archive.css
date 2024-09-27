@@ -63,6 +63,9 @@ li{
 .about-body{
 	text-align: center;
 }
+.about-body p{
+	margin: 0.5em;
+}
 .about-img img{
 	margin-top:100px;
 	width: 100%;
@@ -72,6 +75,11 @@ li{
 	-moz-opacity:0.6;                 /* FF lt 1.5, Netscape */
 	-khtml-opacity: 0.6;              /* Safari 1.x */
 	opacity:0.6;
+}
+.quality-img img{
+	margin-top:100px;
+	width: 100%;
+	margin-bottom: -7px;
 }
 
 @media screen and (max-width: 480px) {
@@ -110,6 +118,9 @@ li{
 		padding: 0;
 	}
 	.about-img img {
+		margin-top: 50px;
+	}
+	.quality-img img {
 		margin-top: 50px;
 	}
 }
